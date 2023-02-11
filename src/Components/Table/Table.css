@@ -1,0 +1,51 @@
+.top-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 61px);
+}
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.delete-btn {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  background-color: rgb(240, 55, 55);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn {
+  text-decoration: none;
+  width: 80px;
+  padding: 6px;
+  font-size: 16px;
+  background-color: rgb(33, 43, 238);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.edit-btn {
+  text-decoration: none;
+  width: 45%;
+  padding: 6px;
+  font-size: 16px;
+  background-color: rgb(11, 209, 11);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
