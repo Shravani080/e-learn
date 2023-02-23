@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to bottom, #0f8aef, #90caf9);
 }
 
 .login-form {
-  background: linear-gradient(to bottom, #0f8aef, #90caf9);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px #ddd; 

@@ -1,34 +1,13 @@
 .header {
   background: linear-gradient(to bottom, #0f8aef, #90caf9);
   color: white;
-  padding: 20px;
-  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
 }
-
-#logout-btn {
-  width: 9%;
-  padding: 8px;
-  font-size: 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  float: right;
- 
+.user-info-container {
+  display: flex;
 }
-
-
-#new-btn{
-  text-decoration: none;
-  width: 7%;
-  padding: 6px;
-  font-size: 16px;
-  background-color: rgb(33, 43, 238);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  position:absolute;
-  margin-left: 450px;
+.user-name {
+  margin-right: 10px;
 }

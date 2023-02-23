@@ -27,8 +27,8 @@ const LoginPage = () => {
       setErrMsg("Please enter valid email");
     } else {
       localStorage.setItem('userdetails', JSON.stringify({ username: user.username, email: user.email }));
-      console.log(user)
-      navigater("/Dashboard")
+      // console.log(user)
+      navigater("/dashboard")
     }
   }
 

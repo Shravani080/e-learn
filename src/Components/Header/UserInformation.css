@@ -1,0 +1,16 @@
+.user-information-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon {
+  font-size: 250px;
+  position: relative;
+}
+
+.user-details {
+  position: absolute;
+  margin-top: 420px;
+  font-size: 30px;
+}

@@ -1,9 +1,10 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { FormControl, Input, InputLabel } from '@mui/material';
+
 
 const style = {
   position: 'absolute',
@@ -22,20 +23,35 @@ const style = {
   '& > :not(style)': { m: 1 }
 };
 
-export default function AddUsers({ open, setOpen, handleAddUser, editUser }) {
-  debugger;
+export default function AddUsers({ open, setOpen, handleAddUser, editUser, updateEditUser }) {
+
   const [user, setUser] = React.useState({
-    id: null ,
+    id: null,
     name: null,
     email: null
   });
 
+  useEffect(() => {
+    if (editUser.id) {
+      setUser({ ...editUser })
+    }
+  }, [editUser])
+
+
   const handleChange = (e) => {
-    
-      editUser ({ ...user, [e.target.name]: e.target.value })
-    
-      setUser({...user, [e.target.name]: e.target.value })
+    e.preventDefault()
+    setUser({ ...user, [e.target.name]: e.target.value })
   }
+
+  const handleUser = () => {
+    if (editUser.id) {
+      updateEditUser(user)
+    } else {
+      handleAddUser(user);
+    }
+    setOpen(false);
+  }
+
 
   return (
     <div>
@@ -49,18 +65,17 @@ export default function AddUsers({ open, setOpen, handleAddUser, editUser }) {
             <Input id="component-simple" name="name" defaultValue={editUser.name} onChange={handleChange} />
           </FormControl>
           <FormControl variant="standard">
-            <InputLabel htmlFor="component-simple" >Email</InputLabel>
-            <Input id="component-simple" name='email' defaultvalue={editUser.email} onChange={handleChange} />
+            <InputLabel htmlFor="component-simple1" >Email</InputLabel>
+            <Input id="component-simple1" name='email' defaultValue={editUser.email} onChange={handleChange} />
           </FormControl>
           <Stack direction="row" spacing={2}>
-            <Button onClick={() => handleAddUser(user)} variant="contained" color="success">
-              Add User
+            <Button onClick={handleUser} variant="contained" color="success">
+              {editUser.id ? "Update User" : "Add User"}
             </Button>
             <Button onClick={() => setOpen(false)} variant="outlined" color="error">
               close
             </Button>
           </Stack>
-
         </Box>
       </Modal>
     </div>
