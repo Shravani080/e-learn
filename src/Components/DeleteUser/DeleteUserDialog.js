@@ -8,7 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 
 export default function DeleteUserDialog({ setShowDeleteDialog, showDeleteDialog, deleteUser }) {
- 
+
 
   return (
     <div>
@@ -29,12 +29,12 @@ export default function DeleteUserDialog({ setShowDeleteDialog, showDeleteDialog
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setShowDeleteDialog(false)}>Cancel</Button>
-          <Button onClick= { deleteUser} autoFocus>
+          <Button onClick={deleteUser} autoFocus>
             Delete
           </Button>
         </DialogActions>
       </Dialog>
-     
+
     </div>
   );
 }

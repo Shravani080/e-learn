@@ -7,7 +7,7 @@ import { faUser, faRightToBracket, faCircleUser } from '@fortawesome/free-solid-
 import { useNavigate } from "react-router-dom";
 import './ProfileIcon.css';
 
-export default function ProfileIcon({handler}) {
+export default function ProfileIcon({ handler }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function ProfileIcon({handler}) {
   };
   const handleClose = () => {
     setAnchorEl(null);
-   
+
   };
 
   return (
@@ -46,10 +46,10 @@ export default function ProfileIcon({handler}) {
         open={open}
         onClose={handleClose}
         TransitionComponent={Fade}
-       >
-        
+      >
+
         <MenuItem onClick={handleProfileClick}>
-        <FontAwesomeIcon className='profile-menu' icon={faUser} onClick={handleClose} />
+          <FontAwesomeIcon className='profile-menu' icon={faUser} onClick={handleClose} />
           Profile
         </MenuItem>
         <MenuItem onClick={handler} >

@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import './App.css';
-import UserInformation from "./Components/Header/UserInformation";
+import UserInformation from "./Components/UserInformation/UserInformation";
 import Header from "./Components/Header/Header";
 import { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';

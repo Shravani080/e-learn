@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react'
-import AddUsers from '../Header/AddUsers';
-import SearchInput from './SearchInput';
+import AddUsers from '../AddUser/AddUsers';
+import SearchInput from '../SearchInput/SearchInput';
 import './Table.css';
 import Button from '@mui/material/Button';
-import DeleteUserDialog from './DeleteUserDialog';
+import DeleteUserDialog from '../DeleteUser/DeleteUserDialog';
 import Alert from '@mui/material/Alert';
 
 const Table = ({ data, admins }) => {
