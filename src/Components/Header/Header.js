@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import './Header.css';
-import ProfileIcon from './ProfileIcon';
+import ProfileIcon from '../ProfileIcon/ProfileIcon';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
