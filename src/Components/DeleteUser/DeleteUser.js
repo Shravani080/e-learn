@@ -7,7 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 
-export default function DeleteUserDialog({ setShowDeleteDialog, showDeleteDialog, deleteUser }) {
+export default function DeleteUser({ setShowDeleteDialog, showDeleteDialog, deleteUser }) {
 
 
   return (

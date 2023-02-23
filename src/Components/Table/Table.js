@@ -5,7 +5,7 @@ import AddUsers from '../AddUser/AddUsers';
 import SearchInput from '../SearchInput/SearchInput';
 import './Table.css';
 import Button from '@mui/material/Button';
-import DeleteUserDialog from '../DeleteUser/DeleteUserDialog';
+import DeleteUser from '../DeleteUser/DeleteUser';
 import Alert from '@mui/material/Alert';
 
 const Table = ({ data, admins }) => {
@@ -109,7 +109,7 @@ const Table = ({ data, admins }) => {
             {open && <AddUsers editUser={editUser} EditUsers={EditUsers} updateEditUser={updateEditUser}
                 handleAddUser={handleAddUser} open={open}
                 setOpen={setOpen} />}
-            <DeleteUserDialog deleteUser={deleteUser} showDeleteDialog={showDeleteDialog} setShowDeleteDialog={setShowDeleteDialog} />
+            <DeleteUser deleteUser={deleteUser} showDeleteDialog={showDeleteDialog} setShowDeleteDialog={setShowDeleteDialog} />
             <div>
                 <table className='table' border="1">
                     <thead>
