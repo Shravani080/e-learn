@@ -73,7 +73,7 @@ export default function AddUsers({ open, setOpen, handleAddUser, editUser, updat
               {editUser.id ? "Update User" : "Add User"}
             </Button>
             <Button onClick={() => setOpen(false)} variant="outlined" color="error">
-              Clos
+              Close
             </Button>
           </Stack>
         </Box>
