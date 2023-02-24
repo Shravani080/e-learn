@@ -13,11 +13,9 @@ const LoginPage = () => {
 
   const navigater = useNavigate();
 
-  const EventHandler = (e) => {
-    const { name, value } = e.target;
-    
+  const EventHandler = (e) => {    
       setUser((user) => {
-        return { ...user, [name]: value }
+        return { ...user, [e.target.name]: e.target.value }
       })
   }
 
