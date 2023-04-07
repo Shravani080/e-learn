@@ -1,28 +1,3 @@
-import React from 'react'
-import ToDo from './ToDo/ToDo'
-
-function App() {
-  return (
-    <div>
-      <ToDo/>
-    </div>
-  )
-}
-
-export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import { Routes, Route } from "react-router-dom";
 // import Dashboard from "./Components/Dashboard/Dashboard";
 // import LoginPage from "./Components/LoginPage/LoginPage";
@@ -65,13 +40,3 @@ export default App
 
 
 
-// {todos.map((item, index) => (
-//   <li>
-//     <input
-//       type="text"
-//       value={item}
-//       onChange={(e) => (todos[index] = e.target.value)}
-//     />
-//     <button onClick={() => todos.splice(index, 1)}>Delete</button>
-//   </li>
-// ))}
